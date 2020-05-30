@@ -27,3 +27,5 @@ router.get('/work', async(req, res) => {
     res.status(statusCode.OK)
         .send(util.success(statusCode.OK, resMessage.RECOMAND_FIND_ALL, result));
 })
+
+module.exports = router;
