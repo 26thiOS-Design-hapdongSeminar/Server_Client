@@ -4,6 +4,7 @@ const statusCode = require('../modules/statusCode');
 const resMessage = require('../modules/responseMessage');
 var router = express.Router();
 
+
 router.get('/recommand', async(req, res) => {
     const result = {
         "classIdx": "1",
@@ -12,7 +13,7 @@ router.get('/recommand', async(req, res) => {
         "price": "41600",
         "difficulty": "중",
         "term": "32일",
-        "category": "공예/도자"
+        "category": "공예/도자",
     }
     
     res.status(statusCode.OK)
