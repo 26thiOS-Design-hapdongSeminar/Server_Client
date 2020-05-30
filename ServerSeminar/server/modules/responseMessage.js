@@ -4,4 +4,6 @@ module.exports = {
     RECOMAND_FIND_ALL : "추천작품 조회 성공",
 
     LIVE_FIND_ALL : "실시간 조회 성공",
+
+    POPULAR_WRITE_FIND_ALL : "인기작가 조회 성공",
 }
