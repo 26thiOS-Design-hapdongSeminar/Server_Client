@@ -27,3 +27,5 @@ router.get('/live', async(req, res) => {
     res.status(statusCode.OK)
         .send(util.success(statusCode.OK, resMessage.LIVE_FIND_ALL, result));
 })
+
+module.exports = router;
