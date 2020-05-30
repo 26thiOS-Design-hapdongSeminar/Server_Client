@@ -29,3 +29,5 @@ router.get('/write', async (req, res) => {
     res.status(statusCode.OK)
         .send(util.success(statusCode.OK, resMessage.POPULAR_WRITE_FIND_ALL, result));
 })
+
+module.exports = router;
