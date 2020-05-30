@@ -6,4 +6,6 @@ module.exports = {
     LIVE_FIND_ALL : "실시간 조회 성공",
 
     POPULAR_WRITE_FIND_ALL : "인기작가 조회 성공",
+
+    BANNER_IMG_FIND_ALL : "배너 이미지 조회 성공",
 }
