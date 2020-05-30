@@ -5,7 +5,7 @@ const resMessage = require('../modules/responseMessage');
 var router = express.Router();
 
 
-router.get('/banner', async(req, res) => {
+router.get('/', async(req, res) => {
     const result = [
         {
             "imgIdx" : "1",
