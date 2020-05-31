@@ -8,4 +8,6 @@ module.exports = {
     POPULAR_WRITE_FIND_ALL : "인기작가 조회 성공",
 
     BANNER_IMG_FIND_ALL : "배너 이미지 조회 성공",
+
+    PRODUCT_REVIEW_FIND_ALL : "상품 구매 후기 조회 성공",
 }
