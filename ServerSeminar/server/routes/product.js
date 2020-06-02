@@ -55,6 +55,8 @@ router.use('/review', async(req, res) => {
             "className" : "컬러자수 스크런치 곱창끈",
             "mainText" : "스크런치의 자수 부분에 엉성한 느낌이 없이 화사하고 탄성 또한 적절합니다 증정으로 보내주신 키링도 좋아하는 색감에다 앙증맞아서 아주아주 만족스럽습니다",
         }
+
+        
     ]
 
     res.status(statusCode.OK)
