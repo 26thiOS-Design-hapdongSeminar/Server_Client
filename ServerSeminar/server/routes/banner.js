@@ -8,7 +8,6 @@ let Banner = require('../models/banner');
 
 router.get('/', async(req, res) => {
     const result = await Banner.getBanner();
-    console.log(result);
     
     res.status(statusCode.OK)
         .send(util.success(statusCode.OK, resMessage.BANNER_IMG_FIND_ALL, result));

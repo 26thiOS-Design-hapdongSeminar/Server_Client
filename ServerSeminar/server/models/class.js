@@ -3,7 +3,7 @@ const table = 'class';
 
 const classModels = {
     getRecommendClass : async () => {
-        const query = `SELECT * FROM ${table} AS a JOIN classRecommend AS b ON (a.classIdx = b.classIdx)`;
+        const query = `SELECT * FROM ${table} AS a LEFT JOIN classRecommend AS b ON (a.classIdx = b.classIdx)`;
         try {
             const result = await pool.queryParam(query);
             return result;
@@ -17,7 +17,7 @@ const classModels = {
         }
     },
     getProgressClassPopular : async () =>{
-        const query = `SELECT * FROM ${table} AS a JOIN progress AS b ON (a.classIdx = b.classIdx) WHERE status="인기"`
+        const query = `SELECT * FROM ${table} AS a LEFT JOIN progress AS b ON (a.classIdx = b.classIdx) WHERE status="p"`
         try {
             const result = await pool.queryParam(query);
             return result;
