@@ -1,6 +1,7 @@
 const pool = require('../modules/pool');
 const table = 'banner';
 
+//배너 조회
 const banner = {
     getBanner : async () =>{
         query = `SELECT * FROM ${table}`;
