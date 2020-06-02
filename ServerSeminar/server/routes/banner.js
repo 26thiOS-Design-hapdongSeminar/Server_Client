@@ -5,7 +5,7 @@ const resMessage = require('../modules/responseMessage');
 var router = express.Router();
 let Banner = require('../models/banner');
 
-
+//베너 조회
 router.get('/', async(req, res) => {
     const result = await Banner.getBanner();
     
