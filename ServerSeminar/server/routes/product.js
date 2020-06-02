@@ -5,6 +5,14 @@ const resMessage = require('../modules/responseMessage');
 var router = express.Router();
 let Product = require('../models/product');
 
+//test
+router.get('/', async(req,res)=>{
+    const result = await Product.testproduct();
+
+    res.status(statusCode.OK)
+        .send(util.success(statusCode.OK, resMessage.OK, result));
+})
+
 // 추천 작품
 router.get('/recommend', async(req, res) => {
     const result = await Product.getRecommendProduct();
