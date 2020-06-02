@@ -2,7 +2,7 @@ const pool = require('../modules/pool');
 const table = 'product';
 
 const product = {
-    getRecommendProduct : async()=>{
+    getRecommendProduct : async() => {
         query = `SELECT * FROM ${table} AS a RIGHT JOIN productRecommend AS b ON (a.productIdx = b.productIdx)`;
         try {
             const result = await pool.queryParam(query);
