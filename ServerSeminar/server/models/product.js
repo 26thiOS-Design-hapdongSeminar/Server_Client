@@ -31,7 +31,7 @@ const product = {
         }
     },
     getLiveProduct : async ()=>{
-        query = `SELECT * FROM ${table} AS a RIGHT JOIN productLive AS b ON (a.productIdx = b.productIdx)`;
+        query = `SELECT * FROM ${table} AS a RIGHT JOIN productLive AS b ON (a.productIdx = b.productIdx) WHERE status="p"`;
         try {
             const result = await pool.queryParam(query);
             return result;
