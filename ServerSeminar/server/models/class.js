@@ -29,6 +29,20 @@ const classModels = {
             console.log('getProgressClassPopular : ', err);
             throw err;
         }
+    },
+    getClassReview : async () =>{
+        const query = `SELECT a.classIdx, a.name, b.* FROM ${table} AS a JOIN review AS b ON (a.classIdx = b.classIdx)`;
+        try {
+            const result = await pool.queryParam(query);
+            return result;
+        } catch (err) {
+            if (err.errno == 1062) {
+                console.log('getClassReview : ', err.errno, err.code);
+                return -1;
+            }
+            console.log('getClassReview : ', err);
+            throw err;
+        }
     }
 }
 

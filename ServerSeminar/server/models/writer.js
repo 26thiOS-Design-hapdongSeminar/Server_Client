@@ -9,10 +9,10 @@ const writer = {
             return result;
         } catch (err){
             if (err.errno == 1062) {
-                console.log('getRecommendProduct : ', err.errno, err.code);
+                console.log('getWriter : ', err.errno, err.code);
                 return -1;
             }
-            console.log('getRecommendProduct : ', err);
+            console.log('getWriter : ', err);
             throw err;
         }
     }

@@ -13,6 +13,14 @@ router.get('/recommend', async(req, res) => {
         .send(util.success(statusCode.OK, resMessage.CLASS_FIND_ALL, result));
 })
 
+// 클래스 리뷰
+router.get('/review', async(req, res) => {
+    const result = await classmodels.getClassReview();
+
+    res.status(statusCode.OK)
+        .send(util.success(statusCode.OK, resMessage.CLASS_FIND_ALL, result));
+})
+
 //진행중인 클래스 중 인기 클래스
 router.get('/progress/popular', async(req, res) => {
     const result = await classmodels.getProgressClassPopular();
@@ -20,6 +28,7 @@ router.get('/progress/popular', async(req, res) => {
     res.status(statusCode.OK)
         .send(util.success(statusCode.OK, resMessage.CLASS_FIND_ALL, result));
 })
+
 
 
 
