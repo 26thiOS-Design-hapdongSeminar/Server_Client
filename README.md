@@ -1,17 +1,19 @@
-# 클라이언트 - 서버 합동 세미나 
+# 서버 - 클라이언트 합동세미나
 
 
 ### Server : 이지윤, 최정균
 
-### To Do
+# 1️⃣ Level1 : API 명세서
 
-|Stage|Contents|Done|
-|------|---|---|
-|1|[API Wiki 만들기](https://github.com/26thiOS-Design-hapdongSeminar/Server_Client/wiki/%F0%9F%96%8DAPI-Explain%F0%9F%96%8D)|✔|
-|2|[데이터베이스 구현 & ERD 만들기](https://github.com/26thiOS-Design-hapdongSeminar/Server_Client/blob/master/img/ERD.PNG)|✔|
-|3|클라이언트 기능 테스트||
+✔ [API Wiki 만들기](https://github.com/26thiOS-Design-hapdongSeminar/Server_Client/wiki/%F0%9F%96%8DAPI-Explain%F0%9F%96%8D) 
 
 
-### [Level2 - ERD](https://github.com/26thiOS-Design-hapdongSeminar/Server_Client/blob/master/Level2/ERD.PNG)
+# 2️⃣ Level2 : ERD 
 
-### [Level3 - pm2](https://github.com/26thiOS-Design-hapdongSeminar/Server_Client/blob/master/Level3/pm2.PNG)
+![ERD](./Level2/ERD.PNG)
+
+
+# 3️⃣ Level3 : EC2 - RDS
+
+![EC2](./Level3/pm2.PNG)
+
