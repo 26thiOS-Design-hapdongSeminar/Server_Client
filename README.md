@@ -7,10 +7,13 @@
 
 ✔ [API Wiki 만들기](https://github.com/26thiOS-Design-hapdongSeminar/Server_Client/wiki/%F0%9F%96%8DAPI-Explain%F0%9F%96%8D) 
 
+<br><br>
 
 # 2️⃣ Level2 : ERD 
 
 ![ERD](./Level2/ERD.PNG)
+
+<br><br>
 
 
 # 3️⃣ Level3 : EC2 - RDS
