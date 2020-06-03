@@ -18,7 +18,7 @@ router.get('/review', async(req, res) => {
     const result = await classmodels.getClassReview();
 
     res.status(statusCode.OK)
-        .send(util.success(statusCode.OK, resMessage.CLASS_FIND_ALL, result));
+        .send(util.success(statusCode.OK, resMessage.CLASS_REVIEW_FIND_ALL, result));
 })
 
 //진행중인 클래스 중 인기 클래스

@@ -10,4 +10,6 @@ module.exports = {
     BANNER_IMG_FIND_ALL : "배너 이미지 조회 성공",
 
     PRODUCT_REVIEW_FIND_ALL : "상품 구매 후기 조회 성공",
+
+    CLASS_REVIEW_FIND_ALL : "클래스 리뷰 조회 성공",
 }
